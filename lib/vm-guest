@@ -291,6 +291,7 @@ __guestpri_convert_linux(){
 
     # update guest type and run linux loader
     __vm_config_set "${_name}" "guest" "linux"
+    __config_load "${vm_dir}/${_name}/${_name}.conf"
     __guest_linux "$1"
 
     return 0
