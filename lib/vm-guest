@@ -280,6 +280,8 @@ __guest_linux(){
 # We just make sure file is hard coded and change guest type.
 #
 __guestpri_convert_linux(){
+    __log "guest" "${_name}" "*converting to new linux guest format"
+
     if [ "$1" = "install" ]; then
         mv "${vm_dir}/${_name}/boot.cmd" "${vm_dir}/${_name}/install.cmd" >/dev/null 2>&1
         __vm_config_set "${_name}" "grub_iso_commands" "install.cmd"
