@@ -39,7 +39,7 @@ vmdir:
 		${MKDIR} -p "${PATH}/.templates"; \
 		${MKDIR} -p "${PATH}/.iso"; \
 		${MKDIR} -p "${PATH}/.config"; \
-		${CP} sample-templates/* "${PATH}/.templates/"; \
+		${CP} -R sample-templates/* "${PATH}/.templates/"; \
 	fi;
 
 .MAIN: clean

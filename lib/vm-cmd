@@ -45,7 +45,7 @@ __parse_cmd(){
         destroy)   __vm_destroy "$@" ;;
         rename)    __vm_rename "$@" ;;
         install)   __vm_install "$@" ;;
-        start)     __vm_start "$1" ;;
+        start)     __vm_start "$@" ;;
         stop)      __vm_stop "$@" ;;
         add)       __vm_add "$@" ;;
         reset)     __vm_reset "$@" ;;
